@@ -1,6 +1,6 @@
 #update-chia.sh
 #!/bin/bash
-~/stop-chia.sh
+./stop-chia.sh
 git fetch
 git checkout latest
 git reset --hard FETCH_HEAD
@@ -15,5 +15,5 @@ read -p "Enter to continue or Ctrl+C to cancel???"
 sh install.sh
 . ./activate
 chia init
-~/start-chia.sh
+./start-chia.sh
 echo Updated.
