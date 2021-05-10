@@ -3,6 +3,6 @@
 #cd ~/chia-blockchain
 #. ./activate
 #chia start -r
-~/stop-chia.sh
-~/start-chia.sh
+./stop-chia.sh
+./start-chia.sh
 echo Restarted.
