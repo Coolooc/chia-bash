@@ -19,4 +19,5 @@ sh install.sh
 chia init
 cd ~/chia-bash
 ./start-chia.sh
+./version-chia.sh
 echo Updated.
