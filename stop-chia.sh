@@ -4,3 +4,4 @@ cd ~/chia-blockchain
 . ./activate
 chia stop -d all
 chia stop all
+echo Stoped.
