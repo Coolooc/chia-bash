@@ -2,7 +2,8 @@
 #!/bin/bash
 cd ~/chia-blockchain
 . ./activate
-curl -G https://chia.keva.app/ | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' > nodes.txt
+dig dns-introducer.chia.net | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' > nodes.txt
+curl -G https://chia.keva.app/ | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' >> nodes.txt
 echo "wait..."
 i=1
 while read LINE; do
