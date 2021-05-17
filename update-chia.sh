@@ -17,7 +17,5 @@ read -p "Enter to continue or Ctrl+C to cancel?"
 sh install.sh
 . ./activate
 chia init
-cd ~/chia-bash
-./start-chia.sh
-./version-chia.sh
+chia version
 echo Updated.
