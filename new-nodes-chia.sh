@@ -8,6 +8,10 @@ cd ~/chia-blockchain
 . ./activate
 echo "node.chia.net" > nodes.txt
 echo "introducer-eu.chia.net" >> nodes.txt
+echo "introducer-va.chia.net" >> nodes.txt
+echo "introducer-or.chia.net" >> nodes.txt
+echo "introducer-apne.chia.net" >> nodes.txt
+echo "introducer-apse.chia.net" >> nodes.txt
 dig dns-introducer.chia.net | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' >> nodes.txt
 curl -G https://chia.keva.app/ | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' >> nodes.txt
 echo "wait..."
