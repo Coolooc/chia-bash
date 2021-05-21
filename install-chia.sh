@@ -3,7 +3,7 @@
 cd ~
 sudo apt update
 sudo apt upgrade -y
-sudo apt install git smartmontools -y
+sudo apt install git smartmontools glances -y
 git clone https://github.com/Chia-Network/chia-blockchain.git -b latest --recurse-submodules
 cd chia-blockchain
 sh install.sh
