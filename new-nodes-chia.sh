@@ -24,3 +24,4 @@ done < nodes.txt
 rm nodes.txt
 echo "New nodes added."
 chia show -sc
+deactivate

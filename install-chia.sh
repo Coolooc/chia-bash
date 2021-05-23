@@ -11,4 +11,5 @@ sh install.sh
 . ./activate
 chia init
 chia version
+deactivate
 echo Installed.

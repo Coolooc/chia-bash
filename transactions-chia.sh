@@ -3,3 +3,4 @@
 cd ~/chia-blockchain
 . ./activate
 chia wallet get_transactions
+deactivate

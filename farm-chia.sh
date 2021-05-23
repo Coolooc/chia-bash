@@ -4,3 +4,4 @@ cd ~/chia-blockchain
 . ./activate
 chia farm summary
 chia farm challenges
+deactivate

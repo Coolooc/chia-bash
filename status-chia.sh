@@ -3,3 +3,4 @@
 cd ~/chia-blockchain
 . ./activate
 chia show -sc
+deactivate
