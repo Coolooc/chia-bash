@@ -5,5 +5,5 @@ cd ~/chia-blockchain
 chia start harvester
 deactivate
 echo Started.
-cd ~/chia-bash
-./log-harvester-chia.sh
+#cd ~/chia-bash
+#./log-harvester-chia.sh
