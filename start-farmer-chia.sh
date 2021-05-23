@@ -7,4 +7,4 @@ echo "wait 5 min..."
 sleep 300
 echo Started.
 cd ~/chia-bash
-./new-nodes-chia.sh
+#./new-nodes-chia.sh
