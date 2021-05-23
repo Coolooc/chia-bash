@@ -1,7 +1,9 @@
 #update-chia.sh
 #!/bin/bash
 ./stop-chia.sh
-cd ~/chia-blockchain
+cd ~/chia-blockchain/chia-blockchain-gui/
+rm package-lock.json
+cd ..
 git fetch
 git checkout latest
 git reset --hard FETCH_HEAD
