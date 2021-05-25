@@ -3,7 +3,7 @@
 cd ~
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y git smartmontools lm-sensors hddtemp
+sudo apt install -y git smartmontools lm-sensors hddtemp iotop
 #sudo apt install -y glances
 #rm -rf ~/chia-blockchain/
 git clone https://github.com/Chia-Network/chia-blockchain.git -b latest --recurse-submodules
