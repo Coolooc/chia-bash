@@ -1,5 +1,6 @@
 #start-farmer-chia.sh
 #!/bin/bash
+echo
 date
 cd ~/chia-blockchain
 . ./activate
