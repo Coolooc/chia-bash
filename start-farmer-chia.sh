@@ -1,5 +1,6 @@
 #start-farmer-chia.sh
 #!/bin/bash
+date
 cd ~/chia-blockchain
 . ./activate
 chia start farmer

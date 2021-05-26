@@ -1,5 +1,6 @@
 #start-harvester-chia.sh
 #!/bin/bash
+date
 cd ~/chia-blockchain
 . ./activate
 chia start harvester
