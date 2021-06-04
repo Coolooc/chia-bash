@@ -3,7 +3,7 @@
 cd ~
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y git smartmontools lm-sensors hddtemp iotop
+sudo apt install -y git smartmontools lm-sensors hddtemp htop iotop atop
 #sudo apt install -y glances
 sudo sensors-detect
 #rm -rf ~/chia-blockchain/
