@@ -1,5 +1,6 @@
 #log-plots-used-chia.sh
 #!/bin/bash
+echo "wait..."
 cd ~
 
 cat ~/.chia/mainnet/log/debug.log* | grep "[^0] plots were" > used_plots_0.txt
