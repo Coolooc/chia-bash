@@ -2,5 +2,5 @@
 #!/bin/bash
 cd ~/chia-blockchain
 . ./activate
-plotman status
+watch plotman status
 deactivate
