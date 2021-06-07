@@ -1,10 +1,10 @@
 #temperature.sh
 #!/bin/bash
-echo
-uptime
-echo
-sudo sensors
-sudo hddtemp /dev/sd?
+#echo
+#uptime
+#echo
+#sudo sensors
+watch -n 10 sudo hddtemp /dev/sd?
 #echo
 #echo sda
 #sudo smartctl -a /dev/sda | grep -i temp
