@@ -1,5 +1,6 @@
 #log-plots-used-all-servers-chia.sh
 #!/bin/bash
+echo "wait..."
 cd ~
 rm -rf log-plots-used
 mkdir log-plots-used
