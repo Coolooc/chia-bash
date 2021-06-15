@@ -1,6 +1,6 @@
 #restart-harvester-chia.sh
 #!/bin/bash
-cd ~/chia-blockchain
+cd ~/chia-bash
 ./stop-chia.sh
 echo "wait 2 min..."
 sleep 120
