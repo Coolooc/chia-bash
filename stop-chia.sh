@@ -2,7 +2,7 @@
 #!/bin/bash
 echo
 date
-cd ~/chia-blockchain
+cd ~/chia-blockchain/
 . ./activate
 chia stop all -d
 chia stop all

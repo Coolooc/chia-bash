@@ -4,7 +4,7 @@
 #dig dns-introducer.chia.net
 #https://chia.keva.app/
 #https://chia.powerlayout.com/
-cd ~/chia-blockchain
+cd ~/chia-blockchain/
 . ./activate
 echo "node.chia.net" > nodes.txt
 echo "introducer-eu.chia.net" >> nodes.txt
