@@ -1,6 +1,6 @@
 #check-plots-chia.sh
 #!/bin/bash
-cd ~/chia-blockchain
+cd ~/chia-blockchain/
 . ./activate
 chia plots check
 deactivate

@@ -8,7 +8,7 @@ sudo apt install -y git smartmontools lm-sensors hddtemp htop iotop atop
 sudo sensors-detect
 #rm -rf ~/chia-blockchain/
 git clone https://github.com/Chia-Network/chia-blockchain.git -b latest --recurse-submodules
-cd chia-blockchain
+cd chia-blockchain/
 sh install.sh
 . ./activate
 chia init

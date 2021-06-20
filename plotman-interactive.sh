@@ -1,6 +1,6 @@
 #plotman-interactive.sh
 #!/bin/bash
-cd ~/chia-blockchain
+cd ~/chia-blockchain/
 . ./activate
 plotman interactive
 deactivate
