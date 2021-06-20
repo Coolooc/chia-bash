@@ -30,8 +30,8 @@ chia init -c ~/ca-keys
 rm -rf ~/ca-keys
 
 chia configure --enable-upnp false
-chia configure --set-farmer-peer 136.243.104.155:8447
-chia configure --set-log-level INFO
+chia configure --set-farmer-peer 178.170.219.28:8447
+chia configure --set-log-level DEBUG
 
 chia start harvester
 sleep 10
@@ -65,6 +65,9 @@ pm2 save
 #startup
 sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u $USER --hp /home/$USER
 
+sleep 10
+pm2 update
+pm2 start all
 pm2 status
 
 echo ""
