@@ -1,24 +1,23 @@
 #update-chia.sh
 #!/bin/bash
-./stop-chia.sh
-cd ~/chia-blockchain/chia-blockchain-gui/
-rm package-lock.json
-cd ..
-git fetch
-git checkout latest
-git reset --hard FETCH_HEAD
-git status
-#If you get RELEASE.dev0 then delete the package-lock.json in chia-blockchain-gui and install.sh again
-#git status should say "nothing to commit, working tree clean",
-#if you have uncommitted changes, RELEASE.dev0 will be reported.
-echo ""
-echo ">>>If you get RELEASE.dev0 then delete the package-lock.json in chia-blockchain-gui and install.sh again"
-echo '>>>git status should say "nothing to commit, working tree clean",'
-echo ">>>if you have uncommitted changes, RELEASE.dev0 will be reported."
-read -p "Enter to continue or Ctrl+C to cancel?"
+
+#stop chia
+cd ~/chia-blockchain/
+. ./activate
+chia stop all -d
+chia stop all
+deactivate
+
+#reinstall chia
+cd ~
+rm -rf chia-blockchain/
+git clone https://github.com/Chia-Network/chia-blockchain.git -b latest --recurse-submodules
+cd chia-blockchain/
 sh install.sh
 . ./activate
-chia init
 chia version
+chia init
+chia start farmer -r
 deactivate
+
 echo Updated.
