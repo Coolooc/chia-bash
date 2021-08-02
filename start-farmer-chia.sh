@@ -4,8 +4,6 @@ echo
 date
 cd ~/chia-blockchain/
 . ./activate
-chia start farmer
+chia start farmer -r
 deactivate
-echo "wait 2 min..."
-sleep 120
 echo Started.

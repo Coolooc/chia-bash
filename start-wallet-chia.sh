@@ -4,6 +4,6 @@ echo
 date
 cd ~/chia-blockchain/
 . ./activate
-chia start wallet
+chia start wallet -r
 deactivate
 echo Started.

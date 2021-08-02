@@ -2,8 +2,8 @@
 #!/bin/bash
 echo
 date
-cd ~/chia-blockchain
+cd ~/chia-blockchain/
 . ./activate
-chia start harvester
+chia start harvester -r
 deactivate
 echo Started.

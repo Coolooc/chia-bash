@@ -6,6 +6,8 @@ cd ~/chia-blockchain/
 . ./activate
 chia stop all -d
 chia stop all
+chia stop all -d
+chia stop all
 deactivate
 
 #reinstall chia
