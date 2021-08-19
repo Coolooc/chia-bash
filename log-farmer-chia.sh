@@ -1,4 +1,4 @@
 #log-farmer-chia.sh
 #!/bin/bash
 echo "wait..."
-tail -f ~/.chia/mainnet/log/debug.log | grep -i "farmer"
+tail -F ~/.chia/mainnet/log/debug.log | grep -i "farmer"
