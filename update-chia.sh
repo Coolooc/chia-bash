@@ -17,9 +17,10 @@ git clone https://github.com/Chia-Network/chia-blockchain.git -b latest --recurs
 cd chia-blockchain/
 sh install.sh
 . ./activate
-chia version
 chia init
-chia start farmer -r
+chia init --fix-ssl-permissions
+chia start harvester -r
+echo "chia version $(chia version)"
 deactivate
 
 echo Updated.

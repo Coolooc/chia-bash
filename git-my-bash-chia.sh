@@ -1,4 +1,4 @@
-#git-update-chia.sh
+#git-my-bash-chia.sh
 #!/bin/bash
 cd ~/chia-bash/
 git fetch

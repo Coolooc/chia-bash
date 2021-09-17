@@ -4,6 +4,7 @@
 cd ~
 sudo apt install -y libsodium-dev cmake g++ git build-essential
 
+rm -rf chia-plotter/
 git clone https://github.com/madMAx43v3r/chia-plotter.git 
 cd chia-plotter
 
